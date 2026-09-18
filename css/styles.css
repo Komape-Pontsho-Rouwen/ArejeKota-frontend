@@ -1,0 +1,212 @@
+/*Global*/
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header*/
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 24px;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+
+
+/* Hamburger menu button */
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    color: #000000;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-icon {
+    width: 28px;
+    height: 24px;
+}
+
+
+/* Wordmark: "areje" in black, "Kota" in red */
+
+.wordmark {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wordmark-accent {
+    color: #D9432E;
+}
+
+
+/* Log in / Sign up (header versions) */
+
+.auth-navigation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    color: #D9432E;
+}
+
+.signup-link {
+    background-color: #D9432E;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.signup-link:hover {
+    background-color:#000000;
+    color: #FFFFFF;
+}
+
+
+/* Dropdown / slide-in menu*/
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    height: 100vh;
+    width: 280px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #FFFFFF;
+    border-right: 1px solid #E5E5E5;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    z-index: 999;
+}
+
+.menu-signup-link {
+    display: block;
+    text-align: center;
+
+    background-color: #D9432E;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.menu-signup-link:hover {
+    background-color: #000000;
+}
+
+.login-outline {
+    display: block;
+    text-align: center;
+
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.login-outline:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.business-link {
+    display: block;
+    color: #4A4038;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.business-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Restaurant Grid styles*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 24px;
+    
+}
+
+.restaurant-card {
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.restaurant-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+.restaurant-name {
+    padding: 12px;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.restaurant-area{
+  padding: 0 12px 12px 12px;
+  margin : 0 ;
+  font-size : 14px;
+  color:#4A4038;
+}
+
+.restaurant-name{
+  padding:12px 12px 4px 12px;
+  margin:0;
+
+
+}
