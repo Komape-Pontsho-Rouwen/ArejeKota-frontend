@@ -1,9 +1,16 @@
 /*Global*/
-
+*{
+    box-sizing :border-box;
+}
 body {
     background-color: #FFFFFF;
     color: #000000;
     font-family: Arial, sans-serif;
+    animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn{
+    from {opacity : 0;}
+    to {opacity : 1;}
 }
 
 
@@ -210,3 +217,163 @@ body {
 
 
 }
+
+.section-title{
+    text-align:center;
+    font-size:28px;
+    margin: 32px 0 24px 0 ;
+}
+
+.site-footer{
+    border-top:1px solid #E5E5E5;
+    padding: 32px 24px;
+    margin-top : 48px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap: 24px;
+    margin-bottom:16px;
+}
+.footer-inks a {
+    color:#000000;
+    text-decoration: none;
+    font-size:14px;
+    font-weight:600;
+}
+.footer-links a:hover{
+    color : #D9432E;
+}
+
+.footer-legal {
+    text-align :center;
+}
+.footer-legal p {
+    color:#A9A9A9;
+    font-size:12px;
+}
+
+/* Sign up page Styling*/
+
+.signup-wordmark{
+    display:block;
+    text-align:center;
+    margin-top:40px;
+}
+
+.signup-card{
+    max-width:400px;
+    margin:40px auto;
+    padding:32px 28px;
+    border: 1px solid #E5E5E5;
+    border-radius:10px;
+}
+
+.signup-card h1{
+    font-size:22px;
+    margin: 0 0 24px 0;
+    text-align: center;
+
+}
+
+.signup-card-label{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+}
+.signup-card input{
+    width:100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    font-size:14px;
+    font-family:Arial , sans-serif;
+}
+
+.signup-card input:focus{
+    outline:none;
+    border: color #000000;
+}
+
+.submit-btn{
+    width:100%;
+    background-color:#D9432E;
+    color:#FFFFFF;
+    border:none;
+    border-radius:6px;
+    padding:12px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background-color:#000000;
+}
+
+.login-hint{
+    text-align:center;
+    font-size:13px;
+    color:#4A4038;
+    margin-top: 20px;
+
+}
+
+.login-hint a {
+    color:#000000;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.login-hint a:hover{
+    color: #d9d9d9
+}
+
+/*Verify Email*/
+
+.otp-subtext {
+    text-align: center;
+    font-size: 13px;
+    color: #4A4038;
+    margin-bottom: 24px;
+}
+
+.otp-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left:12px;
+    margin-right:12px;
+}
+
+.otp-box {
+    width: 44px;
+    height: 52px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    flex: none;
+}
+
+.otp-box:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.otp-timer {
+    text-align: center;
+    font-size: 13px;
+    color: #4A4038;
+    margin-bottom: 20px;
+}
+
+.signup-card .otp-box{
+    width:44px;
+}
+
